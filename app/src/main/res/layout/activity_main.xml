@@ -22,18 +22,18 @@
         app:srcCompat="@drawable/forest_sunny" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_min"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/tv_current"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_current" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_current_deg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.289" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_current"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,20 +60,20 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="25"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/tv_max"
+        app:layout_constraintStart_toEndOf="@+id/tv_min"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_max"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/tv_current"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_current" />
 
     <TextView
         android:id="@+id/textView5"
@@ -81,9 +81,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Min"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toStartOf="@+id/tv_min"
+        app:layout_constraintStart_toEndOf="@+id/tv_min"
+        app:layout_constraintTop_toBottomOf="@+id/tv_min" />
 
     <TextView
         android:id="@+id/textView6"
@@ -93,10 +93,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="Current"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/tv_current"
         app:layout_constraintHorizontal_bias="0.532"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/tv_current"
+        app:layout_constraintTop_toBottomOf="@+id/tv_current" />
 
     <TextView
         android:id="@+id/textView7"
@@ -106,13 +106,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Max"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/tv_max"
         app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/tv_max"
+        app:layout_constraintTop_toBottomOf="@+id/tv_max" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv_humidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -120,10 +120,10 @@
         android:layout_marginRight="8dp"
         android:text="SUNNY"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_current_deg"
         app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/tv_current_deg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_current_deg" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -133,96 +133,96 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tv_day_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_1" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/tv_day_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_2" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tv_day_2_deg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_2" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/tv_day_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_3" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_day_3_deg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_3" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tv_day_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_4" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_day_4_dag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/img_day_4"
         app:layout_constraintVertical_bias="0.593" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tv_day_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_5" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_day_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -230,14 +230,14 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/tv_day_1_deg"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/tv_day_1"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/clear" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/img_day_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -245,13 +245,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView15"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_day_2_deg"
+        app:layout_constraintStart_toEndOf="@+id/tv_day_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_day_1"
         app:srcCompat="@drawable/clear" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_day_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -259,13 +259,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/tv_day_3_deg"
+        app:layout_constraintStart_toEndOf="@+id/tv_day_3"
+        app:layout_constraintTop_toBottomOf="@+id/img_day_2"
         app:srcCompat="@drawable/clear" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/img_day_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -273,13 +273,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView17"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/tv_day_4_dag"
+        app:layout_constraintStart_toEndOf="@+id/tv_day_4"
+        app:layout_constraintTop_toBottomOf="@+id/img_day_3"
         app:srcCompat="@drawable/clear" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/img_day_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -287,32 +287,32 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView18"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/tv_day_5_deg"
+        app:layout_constraintStart_toEndOf="@+id/tv_day_5"
+        app:layout_constraintTop_toBottomOf="@+id/img_day_4"
         app:srcCompat="@drawable/clear" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tv_day_1_deg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_1" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_day_5_deg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintBottom_toTopOf="@+id/img_day_5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/img_day_5" />
 
     <TextView
         android:id="@+id/textView19"
