@@ -15,7 +15,7 @@ import okhttp3.HttpUrl
 // singleton class
 object RetrofitRESTClient {
 
-    private const val BASE_URL = "api.openweathermap.org/data/2.5/"
+    private const val BASE_URL = "http://api.openweathermap.org/data/2.5/"
 
     fun getClient(): RetrofitWeatherInterface {
         val interceptor = HttpLoggingInterceptor()
@@ -44,6 +44,7 @@ object RetrofitRESTClient {
             val url = originalHttpUrl.newBuilder()
                     .addQueryParameter("appid", "62784b0751250bd346d2890db891c6e6")
                     .addQueryParameter("id", "993800")  // johannesburg
+                    .addQueryParameter("units", "metric")  // brig the data back in celsius
                     .build()
 
             // Request customization: add request headers

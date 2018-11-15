@@ -25,9 +25,9 @@ class Main {
     var grndLevel: Double? = null
     @SerializedName("humidity")
     @Expose
-    var humidity: Int? = null
+    var humidity: Double? = null
     @SerializedName("temp_kf")
     @Expose
-    var tempKf: Int? = null
+    var tempKf: Double? = null
 
 }
