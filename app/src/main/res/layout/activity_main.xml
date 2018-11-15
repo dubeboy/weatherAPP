@@ -2,9 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#47AB2F"
+    android:background="@color/rainy_bg"
     tools:context=".activity.MainActivity">
 
     <ImageView
@@ -12,10 +13,10 @@
         android:layout_width="0dp"
         android:layout_height="309dp"
         android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -121,7 +122,6 @@
         android:text="SUNNY"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toStartOf="@+id/tv_current_deg"
-        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toEndOf="@+id/tv_current_deg"
         app:layout_constraintTop_toBottomOf="@+id/tv_current_deg" />
 
@@ -139,7 +139,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="0"
-        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_1" />
@@ -151,7 +150,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="0"
-        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_2" />
@@ -160,10 +158,10 @@
         android:id="@+id/tv_day_2_deg"
         android:layout_width="42dp"
         android:layout_height="wrap_content"
-               android:textAlignment="center"
- android:layout_marginEnd="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_2" />
@@ -175,7 +173,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="0"
-        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_3" />
@@ -185,9 +182,9 @@
         android:layout_width="42dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-              android:textAlignment="center"
-  android:layout_marginRight="8dp"
+        android:layout_marginRight="8dp"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_3" />
@@ -199,7 +196,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="0"
-        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_4" />
@@ -209,9 +205,9 @@
         android:layout_width="42dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-               android:textAlignment="center"
- android:layout_marginRight="8dp"
+        android:layout_marginRight="8dp"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_4"
@@ -224,7 +220,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="0"
-        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_5" />
@@ -310,8 +305,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:textAlignment="center"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_1" />
@@ -320,10 +315,10 @@
         android:id="@+id/tv_day_5_deg"
         android:layout_width="42dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/img_day_5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_day_5" />
