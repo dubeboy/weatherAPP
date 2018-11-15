@@ -1,16 +1,21 @@
 package za.co.dubedivine.dvtweatherapp.rest
 
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import za.co.dubedivine.dvtweatherapp.BuildConfig
 import java.util.concurrent.TimeUnit
+import okhttp3.HttpUrl
+
+
 
 // singleton class
 object RetrofitRESTClient {
 
-    private const val BASE_URL = "https://openweathermap.org/"
+    private const val BASE_URL = "api.openweathermap.org/data/2.5/"
 
     fun getClient(): RetrofitWeatherInterface {
         val interceptor = HttpLoggingInterceptor()
@@ -31,6 +36,23 @@ object RetrofitRESTClient {
         httpClientBuilder.readTimeout(60, TimeUnit.SECONDS)
         httpClientBuilder.connectTimeout(60, TimeUnit.SECONDS)
 
+        //add query to every request
+        httpClientBuilder.addInterceptor { chain ->
+            val original = chain.request()
+            val originalHttpUrl = original.url()
+
+            val url = originalHttpUrl.newBuilder()
+                    .addQueryParameter("appid", "62784b0751250bd346d2890db891c6e6")
+                    .addQueryParameter("id", "993800")  // johannesburg
+                    .build()
+
+            // Request customization: add request headers
+            val requestBuilder = original.newBuilder()
+                    .url(url)
+
+            val request = requestBuilder.build()
+            chain.proceed(request)
+        }
 
         // don`t log in production please
         if (BuildConfig.DEBUG) {

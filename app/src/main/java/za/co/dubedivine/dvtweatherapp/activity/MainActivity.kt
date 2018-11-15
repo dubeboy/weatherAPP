@@ -1,7 +1,8 @@
-package za.co.dubedivine.dvtweatherapp
+package za.co.dubedivine.dvtweatherapp.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import za.co.dubedivine.dvtweatherapp.R
 
 class MainActivity : AppCompatActivity() {
 
